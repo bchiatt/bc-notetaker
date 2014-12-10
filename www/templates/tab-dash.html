@@ -3,7 +3,8 @@
   <body>
     <ion-view title="Dashboard">
       <ion-content class="padding">
-        <h1>Dash</h1>
+        <h1>Dash</h1><a ng-click="logout()" ng-show="rootuser.avatar" class="item item-avatar"><img src="{{rootuser.avatar}}">
+          <h3>{{rootuser.username}}</h3></a>
       </ion-content>
     </ion-view>
   </body>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ion-view title="{{note.title}}">
+      <ion-content has-header="true" padding="true">
+        <div class="list card">
+          <div class="item item-avatar"><img src="{{rootuser.avatar}}">
+            <h2>{{note.title}}</h2>
+            <p>{{moment(note.updatedAt).format('MMMM Do YYYY @ h:mm:ss')}}</p>
+          </div>
+          <div class="item item-body">
+            <p>{{note.body}}</p>
+            <p>Tags: <span ng-repeat="tag in note.tags"><a href="">{{tag}} &nbsp;</a></span></p>
+            <item ng-repeat="img in note.photos" class="item-image"><img ng-src="{{img}}" class="full-image">
+              <p>&nbsp;</p>
+            </item>
+          </div>
+        </div>
+      </ion-content>
+    </ion-view>
+  </body>
+</html>

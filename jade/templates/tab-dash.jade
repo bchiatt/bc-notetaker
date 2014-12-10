@@ -3,3 +3,6 @@ html
     ion-view(title='Dashboard')
       ion-content.padding
         h1 Dash
+        a.item.item-avatar(ng-click='logout()', ng-show='rootuser.avatar')
+          img(src='{{rootuser.avatar}}')
+          h3 {{rootuser.username}}

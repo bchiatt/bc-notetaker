@@ -1,5 +1,10 @@
 {
     "jscodehints.detectedExclusions": [
-        "/Users/Macbook/WebstormProjects/bc-mobilenote/www/js/services.js"
+        "/Users/Macbook/WebstormProjects/bc-mobilenote/www/js/services.js",
+        "/Users/Macbook/WebstormProjects/bc-mobilenote/www/js/controllers/account-controller.js",
+        "/Users/Macbook/WebstormProjects/bc-mobilenote/www/js/controllers.js",
+        "/Users/Macbook/WebstormProjects/bc-mobilenote/www/js/controllers/dash-controller.js",
+        "/Users/Macbook/WebstormProjects/bc-mobilenote/www/js/values/config.js",
+        "/Users/Macbook/WebstormProjects/bc-mobilenote/www/js/controllers/notes-controller.js"
     ]
 }

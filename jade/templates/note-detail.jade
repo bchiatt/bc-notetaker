@@ -1,0 +1,16 @@
+html
+  body
+    ion-view(title='{{note.title}}')
+      ion-content(has-header='true', padding='true')
+        .list.card
+          .item.item-avatar
+            img(src='{{rootuser.avatar}}')
+            h2 {{note.title}}
+            p {{moment(note.updatedAt).format('MMMM Do YYYY @ h:mm:ss')}}
+          .item.item-body
+            p {{note.body}}
+            p Tags: 
+              span(ng-repeat='tag in note.tags'): a(href='') {{tag}} &nbsp;
+            item.item-image(ng-repeat='img in note.photos')
+              img.full-image(ng-src='{{img}}')
+              p &nbsp;
