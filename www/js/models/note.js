@@ -16,6 +16,10 @@
         return $http.get(origin + '/notes/' + id);
       }
 
-      return {list:list, remove:remove, findOne:findOne};
+      function addPhoto(id, buf){
+        return $http.put(origin + '/notes/' + id, {buf: buf});
+      }
+
+      return {list:list, remove:remove, findOne:findOne, addPhoto:addPhoto};
     }]);
 })();
